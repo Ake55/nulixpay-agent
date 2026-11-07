@@ -151,13 +151,30 @@ activemq-data/
 
 # Environments
 .env
+.env.*
+!.env.example
 .envrc
-.venv
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Secret credentials (never commit keys or tokens)
+*.pem
+*.key
+credentials.json
+*credentials*.json
+secrets.json
+service-account*.json
+*.secret
+
+# Local payment records
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db-journal
 
 # Spyder project settings
 .spyderproject
@@ -218,3 +235,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+
+# Frontend packages and build output
+node_modules/

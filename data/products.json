@@ -1,0 +1,137 @@
+[
+  {
+    "id": "hp-001",
+    "name": "Auralis Quiet 40",
+    "category": "headphones",
+    "description": "Over-ear headphones with active noise cancelling for commuting and study.",
+    "price_eur": 129.0,
+    "features": ["active noise cancelling", "40 hour battery", "bluetooth"],
+    "stock": 14
+  },
+  {
+    "id": "hp-002",
+    "name": "Nimbus Buds Mini",
+    "category": "headphones",
+    "description": "Compact wireless earbuds with a pocket charging case.",
+    "price_eur": 49.9,
+    "features": ["wireless earbuds", "charging case", "bluetooth"],
+    "stock": 30
+  },
+  {
+    "id": "hp-003",
+    "name": "Harbor Studio One",
+    "category": "headphones",
+    "description": "Wired over-ear headphones tuned for clear instrument practice.",
+    "price_eur": 89.0,
+    "features": ["wired", "over-ear", "detachable cable"],
+    "stock": 8
+  },
+  {
+    "id": "ph-001",
+    "name": "Lumen Phone S9",
+    "category": "smartphones",
+    "description": "Everyday smartphone with a bright OLED screen and all-day battery.",
+    "price_eur": 449.0,
+    "features": ["128 GB storage", "OLED screen", "all-day battery"],
+    "stock": 11
+  },
+  {
+    "id": "ph-002",
+    "name": "Lumen Phone X2 Pro",
+    "category": "smartphones",
+    "description": "Large smartphone with a triple camera and extra storage.",
+    "price_eur": 899.0,
+    "features": ["256 GB storage", "triple camera", "fast charging"],
+    "stock": 5
+  },
+  {
+    "id": "ph-003",
+    "name": "Pebble Compact 5",
+    "category": "smartphones",
+    "description": "Small smartphone that fits one hand and keeps the essentials.",
+    "price_eur": 199.0,
+    "features": ["64 GB storage", "compact body", "headphone jack"],
+    "stock": 20
+  },
+  {
+    "id": "lp-001",
+    "name": "Northwind Book 14",
+    "category": "laptops",
+    "description": "Slim 14-inch laptop for notes, browsing, and video calls.",
+    "price_eur": 749.0,
+    "features": ["16 GB RAM", "512 GB SSD", "backlit keyboard"],
+    "stock": 6
+  },
+  {
+    "id": "lp-002",
+    "name": "Forge Lap 16",
+    "category": "laptops",
+    "description": "16-inch laptop with room for photo editing and programming projects.",
+    "price_eur": 1099.0,
+    "features": ["32 GB RAM", "dedicated graphics", "1 TB SSD"],
+    "stock": 4
+  },
+  {
+    "id": "lp-003",
+    "name": "Fieldnote Air 13",
+    "category": "laptops",
+    "description": "Light 13-inch laptop with a long battery for lectures.",
+    "price_eur": 629.0,
+    "features": ["14 hour battery", "lightweight", "16 GB RAM"],
+    "stock": 9
+  },
+  {
+    "id": "ac-001",
+    "name": "Cobalt USB-C Hub 7",
+    "category": "accessories",
+    "description": "Seven-port hub with HDMI output for a second screen.",
+    "price_eur": 34.5,
+    "features": ["HDMI", "USB-C", "SD card reader"],
+    "stock": 40
+  },
+  {
+    "id": "ac-002",
+    "name": "Trailpack Sleeve 14",
+    "category": "accessories",
+    "description": "Padded sleeve that protects a 14-inch computer in a backpack.",
+    "price_eur": 24.0,
+    "features": ["water resistant", "14 inch", "padded"],
+    "stock": 25
+  },
+  {
+    "id": "ac-003",
+    "name": "Kite Charge 20W",
+    "category": "accessories",
+    "description": "Small wall charger with a USB-C cable.",
+    "price_eur": 18.9,
+    "features": ["USB-C", "20W", "compact plug"],
+    "stock": 50
+  },
+  {
+    "id": "sw-001",
+    "name": "Pulse Band Active",
+    "category": "smartwatches",
+    "description": "Fitness watch with heart-rate sensing and built-in GPS.",
+    "price_eur": 159.0,
+    "features": ["heart rate", "GPS", "water resistant"],
+    "stock": 16
+  },
+  {
+    "id": "sw-002",
+    "name": "Pulse Band Classic",
+    "category": "smartwatches",
+    "description": "Hybrid watch with a leather strap and sleep tracking.",
+    "price_eur": 219.0,
+    "features": ["leather strap", "sleep tracking", "5 day battery"],
+    "stock": 7
+  },
+  {
+    "id": "sw-003",
+    "name": "Dawn Glass Mini",
+    "category": "smartwatches",
+    "description": "Compact watch with an always-on screen.",
+    "price_eur": 99.0,
+    "features": ["always-on display", "compact", "notifications"],
+    "stock": 0
+  }
+]

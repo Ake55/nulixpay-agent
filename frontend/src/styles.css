@@ -1,0 +1,319 @@
+:root {
+  --ink: #1b2430;
+  --muted: #52616d;
+  --paper: #e7eef2;
+  --sheet: #f7fbfc;
+  --teal: #1f4e5f;
+  --line: #c5d2da;
+  --paid: #1b6b43;
+  --danger: #8c3030;
+  --warn: #8a4b12;
+  color: var(--ink);
+  font-family: "Atkinson Hyperlegible", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.shell {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.mark {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 650;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.desk {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 23rem);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.15;
+  font-weight: 700;
+  max-width: 18ch;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.lede,
+.quiet {
+  color: var(--muted);
+}
+
+.lede {
+  max-width: 42rem;
+  margin-top: 0.6rem;
+}
+
+.talk,
+.explore,
+.return,
+.receipt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.receipt {
+  background: var(--sheet);
+  border-left: 8px solid var(--teal);
+  padding: 1.1rem 1.15rem 1.3rem;
+}
+
+.thread,
+.product-list,
+.merchant-list,
+.lines,
+.offers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bubble {
+  max-width: 42rem;
+}
+
+.bubble.you {
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--line);
+}
+
+.bubble ul,
+.offers {
+  margin-top: 0.35rem;
+}
+
+.bubble ul {
+  margin-bottom: 0;
+  padding-left: 1.1rem;
+}
+
+.composer,
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 9rem auto;
+  gap: 0.7rem;
+  align-items: end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--muted);
+}
+
+textarea,
+input {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 0;
+  padding: 0.55rem 0.65rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+.receipt a,
+.offers a {
+  border: 0;
+  background: var(--teal);
+  color: white;
+  text-decoration: none;
+  padding: 0.65rem 0.85rem;
+  width: fit-content;
+}
+
+button:disabled {
+  background: var(--line);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.text-button {
+  background: transparent;
+  color: var(--teal);
+  padding: 0;
+}
+
+.line-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.total {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.warn {
+  color: var(--warn);
+}
+
+.success {
+  border-left: 8px solid var(--paid);
+  background: var(--sheet);
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.notice,
+.stamp {
+  color: var(--teal);
+}
+
+.product-list li,
+.merchant-list li,
+.lines li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.merchant-list li {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.merchant-list img,
+.no-image {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: cover;
+  background: var(--line);
+}
+
+.offers li {
+  border-top: 0;
+  padding-top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.short {
+  background: #f8efe6;
+}
+
+@media (max-width: 800px) {
+  .desk,
+  .filters,
+  .top,
+  .merchant-list li,
+  .offers li {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav {
+    gap: 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+}

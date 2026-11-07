@@ -1,0 +1,12 @@
+# Web framework. Defines routes such as GET / and returns JSON.
+fastapi
+
+# Server that runs the FastAPI app. The command is: uvicorn main:app
+uvicorn
+
+# Loads PayPal Sandbox credentials from the local .env file.
+python-dotenv
+
+# Calls PayPal Sandbox, Channel3 product search, and, when AGENT_MODE=llm, the model API.
+# Tests use a fake transport, so they do not call those services.
+httpx2
